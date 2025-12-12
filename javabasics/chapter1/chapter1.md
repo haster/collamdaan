@@ -75,7 +75,7 @@ $ java --class-path test:. SimpleJavaClass
 Hello world!
 ```
 
-We now specified ` class-path consisting of both the `test`-directory, as the current directory (represented by '.').
+We now specified a `class-path` consisting of both the `test`-directory, as  well as the current directory (represented by '.').
 Now, `java` can find the `SimpleJavaClass.class` file, since it is located in the current directory.
 But if we move it back to the `test`-directory, `java` can still find it since we specify both directories in our class-path.
 
