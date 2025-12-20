@@ -76,7 +76,7 @@ target/
 Now if we compile the source files:
 
 ```sh
-$ javac -d . source/com/example/collamdaan/a/StringUtils.java source/com/example/collamdaan/b/StringUtils.java
+$ javac -d target/ source/com/example/collamdaan/a/StringUtils.java source/com/example/collamdaan/b/StringUtils.java
 ```
 
 And now we have the following:
@@ -104,7 +104,7 @@ If we now want to delete all class files and recompile the source files, we can 
 
 ```sh
 $ rm -rf target/*
-$ javac -d . source/com/example/collamdaan/a/StringUtils.java source/com/example/collamdaan/b/StringUtils.java
+$ javac -d target/ source/com/example/collamdaan/a/StringUtils.java source/com/example/collamdaan/b/StringUtils.java
 ```
 
 (Note that we don't necessarily need to remove class files before recompiling, but doing this ensures no old class files remain behind in case we renamed or removed a class in a source file.)
