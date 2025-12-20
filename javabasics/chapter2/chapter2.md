@@ -107,11 +107,11 @@ $ rm -rf target/*
 $ javac -d target/ source/com/example/collamdaan/a/StringUtils.java source/com/example/collamdaan/b/StringUtils.java
 ```
 
-(Note that we don't necessarily need to remove class files before recompiling, but doing this ensures no old class files remain behind in case we renamed or removed a class in a source file.)
+(Note that we don't necessarily need to remove class files before recompiling, but doing so ensures no old class files remain behind in case we renamed or removed a class in a source file.)
 
 Apart from the ease of clearing all compiled class files, this also enables us to quickly gather all class files.
 We can for instance zip the target folder and hand the zip file to someone else.
 
-It also makes it easy to only upload the source files to a version control system such as github.
+It also makes it easy to upload only the source files to a version control system such as github.
 We could simply tell git to ignore the target folder (by adding it to `.gitignore`) to ensure no class files get added accidentally.
 
